@@ -5,23 +5,44 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
-    <h1>About Us</h1>
+<body class="bg-gray-100 font-serif">
+    <h1 class="text-3xl font-bold text-gray-600 text-center uppercase">About Us</h1>
+    <div class="text-center">
     <p>We are a small family owned  business, and we are extremely passionate about what we do.</p>
-    <p>We sell spatulas because we <stong>LOVE</stong> spatulas! We wanted to bring the highest quality and widest range of spatulas to you!</p>
+    <p>We sell spatulas because we <a class="font-bold">LOVE</a> spatulas! We wanted to bring the highest quality and widest range of spatulas to you!</p>
     <p>We are currently and online only business and ship out of our hometown warehouse in Illinois.</p>
     <p>All of our spatulas come from the best suppliers who only follow ethical manufacturing processes</p>
+    </div>
 
-    <p><img src="https://mlz06xw6f07p.i.optimole.com/zQfD2gk-98iUxIng/w:992/h:503/q:auto/https://seacoastbusinessfunding.com/wp-content/uploads/2018/01/Support_Small2.jpg"></p>
+    <p class="flex m-auto p-4 border-2 border-white bg-gray-200 w-3/5 mt-2">
+        <img src="https://mlz06xw6f07p.i.optimole.com/zQfD2gk-98iUxIng/w:992/h:503/q:auto/https://seacoastbusinessfunding.com/wp-content/uploads/2018/01/Support_Small2.jpg"></p>
    <p>
-       <h2>Please reach out with any questions at help@welovespatulas.com</h2>
+       <h2 class="text-center m-2">Please reach out with any questions using the following form:</h2>
    </p>
+
+   <form netlify class="text-center">
+    <label class="block mt-4 mr-2 font-bold text-sm" for="name">Name</label>
+    <input class="p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500
+    focus:border-purple-500" type="text" id="name" name="name">
+  
+    <label class="block mt-4 mr-2 font-bold text-sm" for="email">Email</label>
+    <input class="p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500
+    focus:border-purple-500" type="text" id="email" name="email">
+
+    <label class="block mt-4 font-bold text-sm" for="question">Question</label>
+    <input class="p-2 w-1/2 h-44 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500
+    focus:border-purple-500" type="text" id="question" name="question">
+
+  <div class="pt-2 pb-4">
+    <button class="block p-4 m-auto text-white uppercase bg-gray-500 rounded px-4 py-2">Submit form!</button>
+   </div>
+  </form>
    
-    <p>
+    <p class="text-center text-xs underline">
         <a href="products.html">Our Products</a>
     </p>
 
-    <p>
+    <p class="text-center text-xs underline">
         <a href="index.html">Home</a>
     </p>
 
